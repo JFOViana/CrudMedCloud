@@ -31,7 +31,7 @@ interface addNewProps {
   onClose?(value: boolean): void;
 }
 
-const AddNewPatient = ({ refetch, data, isOpen, onClose }: addNewProps) => {
+const AddNewPatient = ({ data, isOpen, onClose }: addNewProps) => {
   const [open, setOpen] = useState(false);
   const { onAddPatient, onRemovePatient, onUpdatePatient } = usePatient();
 
